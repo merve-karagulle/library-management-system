@@ -1,52 +1,54 @@
-# kutuphaneWebSitesi
-Bu depoda, bir kütüphaneye ait veriler veri tabanından alınarak kullanıcılara çeşitli işlemleri gerçekleştirme olanağı sunulmaktadır.
-# 📚 Kütüphane Yönetim Sistemi
+# Library Management System
 
-Bu proje, bir **kütüphane web sitesi** üzerinden kullanıcıların **giriş yapabildiği**, kitapları **ekleyebildiği**, **güncelleyebildiği** ve **silebildiği** bir yönetim sistemi sunar.  
-Proje kapsamında SQL veritabanı kullanılarak kitap, kullanıcı ve kitap takibi işlemleri gerçekleştirilmektedir.
+A modern PHP and MySQL based library management system with dashboard, book, user and loan tracking modules.
 
-## 🚀 Özellikler
+## Features
 
-- Kullanıcı giriş sistemi
-- Kitaplar için:
-  - Ekleme
-  - Silme
-  - Güncelleme
-- Kullanıcılar için:
-  - Ekleme
-  - Silme
-  - Güncelleme
-- Kitap Takip Tablosu:
-  - Kitap ödünç alma ve iade işlemleri
-- SQL veritabanı entegrasyonu
-- Temiz ve kullanıcı dostu arayüz
+- Modern admin dashboard
+- Book management
+- User management
+- Loan / borrowing tracking
+- MySQL database integration
+- CRUD operations
+- Responsive dashboard interface
 
-## 🛠️ Kullanılan Teknolojiler
+## Technologies
 
-- **HTML / CSS / JavaScript** (Web Arayüzü)
-- **PHP** (Arka Plan İşlemleri - varsa)
-- **MySQL** (Veri Tabanı)
-- **cPanel** (Web barındırma - isteğe bağlı)
+- PHP
+- MySQL
+- phpMyAdmin
+- HTML
+- CSS
 
-## 🗄️ Veritabanı Yapısı
+## Local Setup with XAMPP
 
-- `kullanicilar` tablosu
-- `kitaplar` tablosu
-- `kitap_takip` tablosu
+1. Start Apache and MySQL from XAMPP.
+2. Copy this project folder into:
 
-Her tabloda **Ekle**, **Sil** ve **Güncelle** butonları bulunmaktadır.
+```text
+C:\xampp\htdocs\library-management-system
+```
 
-## ⚙️ Kurulum
+3. Open phpMyAdmin:
 
-1. Bu depoyu bilgisayarınıza klonlayın:
-   ```bash
-   git clone (https://github.com/merve-karagulle/kutuphaneWebSitesi)
-2.Veritabanı dosyasını (.sql) kendi MySQL sunucunuza import edin.
-3.Bağlantı ayarlarını (config.php gibi) kendi sunucunuza göre düzenleyin.
-4.Web tarayıcınızdan localhost/proje-adi adresine giderek kullanmaya başlayın.
+```text
+http://localhost/phpmyadmin
+```
 
-🧑‍💻 Katkıda Bulunma
-İyileştirme önerileriniz veya katkılarınız için pull request gönderebilirsiniz!
+4. Select the `library_management` database.
+5. Import:
 
-📜 Lisans
-Bu proje kişisel kullanım içindir. İsterseniz kendinize göre özelleştirip kullanabilirsiniz.
+```text
+database/library_management.sql
+```
+
+6. Open the project:
+
+```text
+http://localhost/library-management-system
+```
+
+## Developer
+
+Merve Karagülle  
+Software Engineering Student | Robotics & Embedded Systems Enthusiast
